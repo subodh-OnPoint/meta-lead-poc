@@ -10,7 +10,7 @@ export class MetaService {
     const token = this.configService.get<string>('META_ACCESS_TOKEN');
 
     const response = await axios.get(
-      `https://graph.facebook.com/v19.0/${leadId}`,
+      `https://graph.facebook.com/v25.0/${leadId}`,
       {
         params: {
           access_token: token,

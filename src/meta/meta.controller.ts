@@ -35,8 +35,7 @@ export class MetaController {
 
         const lead = await this.metaService.getLeadDetails(leadId);
 
-        console.log('Lead Data:', lead);
-
+        console.log(JSON.stringify(lead, null, 2));
         return { status: 'Lead processed' };
     }
 }
